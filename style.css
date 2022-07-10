@@ -214,11 +214,11 @@ h3{
 .courses-item:hover .title{
     color: var(--main-color);
 }
-.courses-item .instructor{
+.courses-item .description-box{
     text-transform: capitalize;
     margin: 0 0 12px;
 }
-.courses-item .instructor img{
+.courses-item .description-box img{
     width: 30px;
     border-radius: 50%;
     margin-right: 5px;
@@ -255,3 +255,8 @@ h3{
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
+
+/*---------------
+Search for item
+-----------*/
+
