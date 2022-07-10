@@ -65,99 +65,103 @@
             </div>
         </div>
 
-   <!-- courses section start -->
+ 
   <section class="section-padding">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
           <div class="section-title text-center">
-            <h2 class="title">Services</h2>
-            <p class="sub-title">Find the right service for you</p>
+            <h3 class="title">Medication Names (Brand & Generic)</h3>     
+            <p class="sub-title">
+              <ul>
+                  <li>Here is a table of medication Generic and Brand names used in the operating room by the anesthesia care team.</li>
+                  <li>You may use the search bar in order to search for a particular medication or scroll down in order to find the medication name. </li>
+                  <li>Once you're done typing, the results will appear, no need to press Enter</li>
+                  <li>If a medication is not found and you'd like it to be added to our table, please use the Contact Us button on the top right of the page.</li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
-      <div class="row">
-        <!-- courses item start -->
-        <div class="col-md-6 col-lg-3">
-          <div class="courses-item">
-            <a href="items_in_stock.html" class="link">
-              <div class="courses-item-inner">
-                <div class="img-box">
-                  <img src="img/anesthesia_stock.png" alt="course img">
-                </div>
-                <h3 class="title">Items in Stock</h3>
-                <div class="description-box">
-                  <span class="item-description">Search the hospital's inventory for item picture, description, and location.</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- courses item end -->
-        <!-- courses item start -->
-        <div class="col-md-6 col-lg-3">
-        <div class="courses-item">
-            <a href="medication_names.html" class="link">
-            <div class="courses-item-inner">
-                <div class="img-box">
-                <img src="img/medication_names.png" alt="course img">
-                </div>
-                <h3 class="title">Medication Names</h3>
-                <div class="description-box">
-                <span class="item-description">Obtain generic and brand names for common anesthetic medications using our search function.</span>
-                </div>
-            </div>
-            </a>
-        </div>
-        </div>
-        <!-- courses item end -->
-        <!-- courses item start -->
-        <div class="col-md-6 col-lg-3">
-        <div class="courses-item">
-            <a href="index.html" class="link">
-            <div class="courses-item-inner">
-                <div class="img-box">
-                <img src="img/surgery_schedule.png" alt="course img">
-                </div>
-                <h3 class="title">Surgery Schedule</h3>
-                <div class="description-box">
-                <span class="item-description">Obtain the most up to date surgery schedule for the operating room.</span>
-                </div>
-            </div>
-            </a>
-        </div>
-        </div>
-        <!-- courses item end -->
-        <!-- courses item start -->
-        <div class="col-md-6 col-lg-3">
-            <div class="courses-item">
-                <a href="index.html" class="link">
-                <div class="courses-item-inner">
-                    <div class="img-box">
-                    <img src="img/ultrasound.png" alt="course img">
-                    </div>
-                    <h3 class="title">Nerve Block Guide</h3>
-                    <div class="description-box">
-                    <span class="item-description">Obtain a description of common nerve blocks and labeled ultrasound images. </span>
-                    </div>
-                </div>
-                </a>
-            </div>
-            </div>
-            <!-- courses item end -->
-      </div>
-      <div class="row">
-        <div class="col-12 text-center mt-3">
-          <a href="allservices.html" class="btn btn-theme">View all applications</a>
-        </div>
-      </div>
+      
+  </section>
+
+  <section class="col-12 text-center mt-3">
+ 
+    <div class="container col-12 text-center ">
+        <hr>
+        <h3>Search by:</h3>
+        <input type="text" id="myInput1" onkeyup='tableSearch1()' placeholder="Generic Name">
+        <br>
+        <input type="text" id="myInput2" onkeyup='tableSearch2()' placeholder="Brand Name">
+        <br>
+        <input type="text" id="myInput3" onkeyup='tableSearch3()' placeholder="Class">
+        <br>
+        <table class="table text-center mt-3" id="myTable" data-filter-control="true" data-show-search-clear-button="true">
+            <tr>
+                <th>Generic Name</th>
+                <th>Brand Name</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>Propofol</td>
+                <td>Diprivan, Propoven</td>
+                <td>General Anesthetics</td>
+            </tr>
+            <tr>
+                <td>Lidocaine</td>
+                <td>Xylocaine</td>
+                <td>Local Anesthetic</td>
+            </tr>
+            <tr>
+                <td>Fentanyl</td>
+                <td>Sublimaze</td>
+                <td>Narcotic</td>
+            </tr>
+            <tr>
+                <td>Ketamine</td>
+                <td>Ketalar</td>
+                <td>General Anesthetic</td>
+            </tr>
+            <tr>
+                <td>Succinylcholine</td>
+                <td>Anectine</td>
+                <td>Neuromuscular Blocking Agent</td>
+            </tr>
+            <tr>
+                <td>Rocuronium</td>
+                <td>Zemuron</td>
+                <td>Neuromuscular Blocking Agent</td>
+            </tr>
+            <tr>
+                <td>Glycopyrrolate</td>
+                <td>Robinul</td>
+                <td>Anticholinergic</td>
+            </tr>
+            <tr>
+                <td>Sevoflurane</td>
+                <td>Ultane</td>
+                <td>Inhalational Agent, General Anesthetic</td>
+            </tr>
+            <tr>
+                <td>Desflurane</td>
+                <td>Suprane</td>
+                <td>Inhalational Agent, General Anesthetic</td>
+            </tr>
+            <tr>
+                <td>Cisatricurium</td>
+                <td>Nimbex</td>
+                <td>Neuromuscular Blocking Agent</td>
+            </tr>
+        </table>
+    </div>
+    <script src="names1.js"></script>
+    <script src="names2.js"></script>
+    <script src="names3.js"></script>
+
     </div>
   </section>
-  <!-- courses section end -->
-
-
-
-	<!-- <script src="index.js"></script> -->
+	  <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

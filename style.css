@@ -257,6 +257,14 @@ h3{
   }
 
 /*---------------
-Search for item
+   table
 -----------*/
+table {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
 
+.pdflink {
+    color:blue;
+}
