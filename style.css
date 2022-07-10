@@ -124,6 +124,54 @@ h3{
     color: var(--main-color);
 }
 
+.header .sub-menu-item a:hover,
+.header .menu-item:hover > a{
+    color: var(--main-color);
+}
+.header .menu-item > a i{
+    font-size: 13px;
+    margin-left: 3px;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+.header .sub-menu{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(213, 213, 213);
+    left: 0;
+    width: 210px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+}
+@media(min-width: 992px){
+    .header .menu-item:hover > .sub-menu{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.header .sub-menu-item a{
+    display: block;
+    padding: 10px 20px;
+    color: var(--black-90);
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+.header-backdrop,
+.header-close-btn,
+.header-hamburger-btn{
+    display: none;
+}
+
+
+
 /* -------------------------- 
  21. =banner section 
  ----------------------------*/
@@ -140,3 +188,70 @@ h3{
     font-weight: 700;
 }
 
+/* ------------------------- 
+ 23. =courses section 
+ ----------------------------*/
+ .courses-item{
+    margin-bottom: 30px;
+    position: relative;
+    display:inline-block;
+}
+.courses-item .img-box img{
+    width: 250px;
+    height:250px;
+    vertical-align: middle;
+    border-radius: 50px;
+}
+.courses-item .link{
+    color: var(--black-70);
+    display: inline-block;
+}
+.courses-item .title{
+    text-transform: capitalize;
+    margin:15px 0;
+    transition: color 0.3s ease;
+}
+.courses-item:hover .title{
+    color: var(--main-color);
+}
+.courses-item .instructor{
+    text-transform: capitalize;
+    margin: 0 0 12px;
+}
+.courses-item .instructor img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.courses-item .rating{
+    font-size: 14px;
+}
+.courses-item .average-rating{
+    font-weight: 600;
+    color: var(--orange);
+}
+.courses-item .average-stars i{
+    color: var(--orange);
+}
+.courses-item .price{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: var(--main-color);
+    color: var(--WHITE);
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
