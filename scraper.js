@@ -6,7 +6,7 @@ const app = express()
 const cors = require('cors')
 app.use(cors())
 
-const url = 'https://en.wikipedia.org/wiki/Tracheal_tube'
+const url = 'https://oxfordmedicaleducation.com/clinical-skills/procedures/endotracheal-tube/'
 
 app.get('/', function (req, res) {
     res.json('This is my webscraper')
@@ -19,14 +19,15 @@ app.get('/results', (req, res) => {
             const $ = cheerio.load(html)
             const articles = []
 
-            $('.mw-parser-output', html).each(function () { //<-- cannot be a function expression
-                const title = $(this).find('p').text()
-                // const url = $(this).find('li').text()
-                const url = $(this).find('a').attr('href')
+            $('.pf-content').each((i,element) => { 
+                const title = $(element).find('li').text()
+                // assign extra elelemts here such as:
+                // const url = $(element).find('a').attr('href')
                 articles.push({
-                    title,
-                    url
+                    title 
+                    // add additional elements, separated by a comma, such as: url
                 })
+                console.log(title)
             })
             res.json(articles)
         }).catch(err => console.log(err))
