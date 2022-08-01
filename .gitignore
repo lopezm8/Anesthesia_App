@@ -1,2 +1,5 @@
 __pycache__
 anesenv
+templates/package-lock.json
+templates/package.json
+templates/node_modules
