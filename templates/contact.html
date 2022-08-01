@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anesthesia Application
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <header class = "header">
+        <div class="container">
+            <div class="header-main d-flex justify-content-between align items-center">
+                <div class="header-logo">
+                    <a href="index.html"><span>Anesthesia</span> App </a>
+                </div>
+                <nav class="header-menu">
+                    <ul class="menu">
+                        <li class="menu-item menu-item-has-children">
+                          <a href="providers.html" class="js-toggle-sub-menu">Providers <i class="fas fa-chevron-down"></i><i class="arrow down"></i></a>
+                          <ul class="sub-menu js-sub-menu">
+                             <li class="sub-menu-item"><a href="emergency_management.html">Emergency Management</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Medication Calculator</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Library of Surgeries</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Anesthesia Updates</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                          <a href="medicalstaff.html" class="js-toggle-sub-menu">Medical Staff <i class="fas fa-chevron-down"> </i> <i class="arrow down"></i></a>
+                          <ul class="sub-menu js-sub-menu">
+                             <li class="sub-menu-item"><a href="items_in_stock.html">Items in Stock</a></li>
+                             <li class="sub-menu-item"><a href="medication_names.html">Medication Names</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Surgery Schedule</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Nerve Block Guide</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                          <a href="allservices.html" class="js-toggle-sub-menu">All Services <i class="fas fa-chevron-down"></i><i class="arrow down"></i></a>
+                          <ul class="sub-menu js-sub-menu">
+                            <li class="sub-menu-item"><a href="items_in_stock.html">Items in Stock</a></li>
+                            <li class="sub-menu-item"><a href="medication_names.html">Medication Names</a></li>
+                             <li class="sub-menu-item"><a href="emergency_management.html">Emergency Management</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Medication Calculator</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Library of Surgeries</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Anesthesia Updates</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Surgery Schedule</a></li>
+                             <li class="sub-menu-item"><a href="index.html">Nerve Block Guide</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item"><a href="updates.html">Updates</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+  <!-- contact section start -->
+  <section class="contact-section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section-title">
+            <h2>FAQs</h2>
+            <p class="sub-title">Please read through our FAQs to find an answer to a question you are searching for. If you cannot find a solution, feel free to contact us using the form on the right.</p>
+          </div>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="icon-box"><i></i></div>
+              <h3>The website is taking too long to load.</h3>
+              <p>Hit the refresh button or try a new web browser.</p>
+            </div>
+            <div class="contact-item">
+              <div class="icon-box"><i></i></div>
+              <h3>The location of an item has changed and the website is not up to date.</h3>
+              <p>Please let us know by filling out the Contact Us form with the item name and new item location.</p>
+            </div>
+            <div class="contact-item">
+              <div class="icon-box"><i></i></div>
+              <h3>An item in stock is on backorder and we are now using a temporary substitute.</h3>
+              <p>Please let us know by filling out the Contact Us form with the item name and the subsitute's manufacturer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-form box">
+            <h2 class="form-title text-center">Leave a Message</h2>
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-block btn-theme btn-form">send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section end -->
+
+
+</div>
+<!-- main wrapper end -->
+<footer>
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="m-0 py-4 text-center">Copyright &copy;2022 Mario Lopez <br> OSU 361 - Software Engineering I</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>  
+<script src="js/main.js"></script>
+</body>
+</html>
