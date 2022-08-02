@@ -52,6 +52,10 @@ def emergency_management():
 def asystole():
 	return render_template("asystole.html")
 
+@app.route("/medication_calculator.html")
+def medication_calculator():
+	return render_template("medication_calculator.html")
+
 @app.route("/allservices.html")
 def allservices():
 	return render_template("allservices.html")
